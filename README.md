@@ -95,7 +95,7 @@ RGB LED is tied to a GPIO8. You can chose between RGB LED or GPIO8 header usage.
 
 ### LiPo charging meter
 
-There are two resistors, 22K and 5.6K as a voltage divider. They are tied to a GPIO01, which is Analog pin A0. As for RGB and BTN, under WHITEBoard Saola, there is a solder jumper. You can choose if you want to use GPIO01 on the header, or to measure battery voltage level.
+There are two resistors, 22K and 5.6K as a voltage divider. They are tied to a GPIO01, which is Analog pin A0. As for RGB, under WHITEBoard DevKitC, there is a solder jumper. You can choose if you want to use GPIO01 on the header, or to measure battery voltage level.
 
 ## Power
 
