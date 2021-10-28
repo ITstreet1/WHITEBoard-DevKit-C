@@ -63,7 +63,7 @@ WHITEBoard DevKitC is a development board based on ESP32-C3 module. Exact module
 
 ## Getting started
 
-WHITEBoard DevKitC is a development board that can be programmed through Arduino IDE. In time of writing this document, there is no support for CircuitPython or MicroPython.
+WHITEBoard DevKitC is a development board that can be programmed through Arduino IDE. In time of writing this document, there is no support from CircuitPython or MicroPython.
 
 ### Arduino IDE C/C++
 
