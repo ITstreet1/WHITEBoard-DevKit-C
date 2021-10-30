@@ -83,9 +83,35 @@ Not supported yet
 
 ### MicroPython
 
-Not supported yet
+If your choice is a MicroPython, you need to have installed the latest version of Python. To check what version you have, open Command Prompt and type in:
 
-![20211028_104538](https://user-images.githubusercontent.com/30090189/139231991-10e3ccfe-53c6-4f38-8d18-1432bd1ce26c.jpg)
+python --version
+
+For erasing and uploading a firmware on ESP32-C3 you need Development mode Esptool, download it by typing:
+
+git clone https://github.com/espressif/esptool.git
+
+cd esptool
+
+pip install -e .
+
+If no problem you should get a message everything is ok. To check if everything is ok, type in:
+
+esptool.py
+
+You should get a list of commands with list of supported chips, in our case esp32c3. The next step is to download a BIN fajl of MicroPython. Go to https://micropython.org/download/esp32c3/ and download BIN fajl on some location on your PC. The next step is to erease Flash of Esp32-C3. To do so connect WHITEBoard DevKitC to a PC with PROG port, and type in:
+
+esptool.py --chip esp32c3 erase_flash
+
+Now it is time to upload the MicroPython firmware to the WHITEBoard DevKitC. To do so check on which COM port is DevKitC (say it is COM7). In prompt type:
+
+esptool.py --chip esp32c3 --port COM7 --baud 460800 write_flash -z 0x0 C:{location}esp32c3-20210902-v1.17.bin
+
+Here you should use the appropriate COM port and appropriate path to a downloaded file. The name of the file might not be as the one here. A version of the software will change in time to come. After successfully uploaded MicroPython unplugs DevKitC and plugs it again through the PROG port.
+
+The next steps are to use your favorite MicroPython editor and program this board. I use Thonny. Select WHITEBoard DevKitC in Thonny by clicking Run->Select Interpreter, and then select proper Port. The name of a code to works automatically has to be main.py. When done, just Save, press Run, and DevKitC will automatically start running the code.
+
+![Untitled](https://user-images.githubusercontent.com/30090189/139534406-d9e01307-9216-455c-9fd7-8b213dcffda6.png)
 
 ## Features
 
@@ -144,6 +170,8 @@ WHITEBoard DevKitC has a two-row header with 42 pins in total. Here you can find
   * TX
   * RX
   * 3V3
+
+![20211028_104538](https://user-images.githubusercontent.com/30090189/139231991-10e3ccfe-53c6-4f38-8d18-1432bd1ce26c.jpg)
 
 ## PROS
 
