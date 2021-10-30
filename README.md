@@ -83,6 +83,8 @@ Not supported yet
 
 ### MicroPython
 
+#### BETA SUPPORT!
+
 If your choice is a MicroPython, you need to have installed the latest version of Python. To check what version you have, open Command Prompt and type in:
 
 python --version
