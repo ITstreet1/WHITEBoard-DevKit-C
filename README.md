@@ -180,8 +180,6 @@ WHITEBoard DevKitC has a two-row header with 42 pins in total. Here you can find
 * LiPo battery
 * RGB LED
 * WiFi
-* Gyro
-* User button
 * OTG and UART micro USB
 * Complete GPIO pinout
 
