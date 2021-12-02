@@ -196,3 +196,9 @@ Dimensions of this board are 28x65.5mm. The hight is 8mm (without headers).
 ## Disclaimer
 
 WHITEBoard DevKitC is an open-source development board. My small contribution to the community, that gave me so much. Feel free to use and modify as you want. It would be nice to add some credits if you do.
+
+## Contribution to me 
+
+You can help me if you want by buying this board at: 
+https://www.tindie.com/products/dekip/whiteboard-devkitc/
+
