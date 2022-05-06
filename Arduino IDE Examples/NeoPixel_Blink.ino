@@ -13,8 +13,8 @@ void setup() {
 }
 void loop() {
   colorWipe(strip.Color(0, 255, 0), 1000); // Green
-  //colorWipe(strip.Color(255, 0, 0), 1000); // Green
-  //colorWipe(strip.Color(0, 0, 255), 1000); // Green
+  //colorWipe(strip.Color(255, 0, 0), 1000); // Red
+  //colorWipe(strip.Color(0, 0, 255), 1000); // Blue
   colorWipe(strip.Color(0, 0, 0), 1000); // white
 }
 
